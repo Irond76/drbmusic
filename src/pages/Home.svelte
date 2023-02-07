@@ -1,16 +1,17 @@
 <script>
   import Header from "../components/Header.svelte";
   import Footer from "../components/Footer.svelte";
+  import Content from "../components/Content.svelte";
 </script>
 
 <header>
   <Header />
 </header>
 <article>
-  <!-- <h1>Home Page</h1> -->
+  <Content />
 </article>
 <footer>
-  <Footer />
+  <!-- <Footer /> -->
 </footer>
 
 <style>
