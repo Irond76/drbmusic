@@ -11,14 +11,17 @@
     margin: 1em auto;
     display: grid;
     grid-template-columns: 1fr;
-    /* justify-items: center; */
   }
   .header-title {
     width: 15vw;
+    padding: 0.2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
     text-align: center;
     /* border: 1px solid blue; */
     border-bottom: 1px solid #a00000;
     border-bottom-width: 0.2em;
+    margin-bottom: 0.1rem;
   }
   .header-sub-title {
     margin-left: 0.4em;
