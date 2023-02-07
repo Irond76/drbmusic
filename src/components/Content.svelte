@@ -6,9 +6,11 @@
   <img src={albumImage} alt="album cover" class="album-cover" />
   <div class="content">
     <h1>
-      <bold class="album-title">SEX AND COSTUMES</bold> ALBUM AVAILABLE NOW!
+      <bold class="album-title">SEX AND COSTUMES</bold>
+      <em>ALBUM AVAILABLE NOW!</em>
     </h1>
     <h2>Featuring <span>10</span> New Tracks</h2>
+    <hr />
   </div>
 </div>
 
@@ -21,6 +23,15 @@
   }
   .content {
     margin-left: -0.75em;
+  }
+  em {
+    font-size: small;
+    padding: 1em;
+  }
+  hr {
+    width: 15vw;
+    margin: 0.5rem auto 0 auto;
+    border: 1px solid #a00000;
   }
   .album-title {
     font-weight: bold;
@@ -44,6 +55,11 @@
     .album-cover {
       width: 8rem;
       margin-bottom: 2rem;
+    }
+    hr {
+      width: 40vw;
+      margin: 0.5rem auto 0 auto;
+      border: 1px solid #a00000;
     }
   }
   @media screen and (min-width: 680px) {
