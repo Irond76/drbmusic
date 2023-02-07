@@ -7,7 +7,7 @@
   <Header />
 </header>
 <article>
-  <h1>Home Page</h1>
+  <!-- <h1>Home Page</h1> -->
 </article>
 <footer>
   <Footer />
@@ -19,8 +19,5 @@
     margin: 0 auto;
     width: 80vw;
     text-align: center;
-  }
-  h1 {
-    color: aliceblue;
   }
 </style>
