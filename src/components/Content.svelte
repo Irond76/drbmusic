@@ -11,10 +11,35 @@
     </h1>
     <h2>Featuring <span>10</span> New Tracks</h2>
     <hr />
+    <ul>
+      <li>SOMETHING IN THE WATER</li>
+      <li>NOT ALONE</li>
+      <li>FRIEND LIKE JAMES DEAN</li>
+      <li>ALL THAT YOU ARE</li>
+      <li>WAIT A MINUTE</li>
+      <li>EVANESCE</li>
+      <li>WAITING ON</li>
+      <li>SEX AND COSTUMES</li>
+      <li>DROP THE BOMB</li>
+      <li>RABID</li>
+    </ul>
   </div>
 </div>
 
 <style>
+  ul {
+    list-style: none;
+  }
+  li {
+    margin-bottom: 0.1rem;
+    font-weight: bolder;
+  }
+  li:hover {
+    cursor: pointer;
+    transition: all 0.2s linear;
+    transform: scale(1.2);
+    color: #a00000;
+  }
   .album-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -30,7 +55,7 @@
   }
   hr {
     width: 15vw;
-    margin: 0.5rem auto 0 auto;
+    margin: 0.5rem auto 1rem auto;
     border: 1px solid #a00000;
   }
   .album-title {
@@ -56,13 +81,16 @@
       grid-template-columns: 1fr;
       width: 100%;
     }
+    li {
+      font-weight: 400;
+    }
     .album-cover {
       width: 8rem;
       margin-bottom: 2rem;
     }
     hr {
       width: 40vw;
-      margin: 0.5rem auto 0 auto;
+      margin: 0.5rem auto 1rem auto;
       border: 1px solid #a00000;
     }
   }
