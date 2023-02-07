@@ -5,7 +5,9 @@
 <div class="album-container">
   <img src={albumImage} alt="album cover" class="album-cover" />
   <div class="content">
-    <h1>SEX AND COSTUMES ALBUM AVAILABLE NOW!</h1>
+    <h1>
+      <bold class="album-title">SEX AND COSTUMES</bold> ALBUM AVAILABLE NOW!
+    </h1>
     <h2>Featuring <span>10</span> New Tracks</h2>
   </div>
 </div>
@@ -19,6 +21,10 @@
   }
   .content {
     margin-left: -0.75em;
+  }
+  .album-title {
+    font-weight: bold;
+    color: #a00000;
   }
   h1 {
     font-size: medium;
