@@ -15,7 +15,7 @@
 
 <style>
   article {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     margin: 0 auto;
     width: 80vw;
     text-align: center;
