@@ -47,6 +47,10 @@
   .album-cover {
     width: 20em;
   }
+  img {
+    box-shadow: 10px 10px 5px black;
+    filter: drop-shadow(1px 1px 10rem #a00000);
+  }
   @media screen and (max-width: 680px) {
     .album-container {
       grid-template-columns: 1fr;
