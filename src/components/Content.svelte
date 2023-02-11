@@ -7,42 +7,42 @@
 <div class="album-container">
   <img src={albumImage} alt="album cover" class="album-cover" />
 </div>
-  <div class="content">
-    <h1>
-      <bold class="album-title">SEX AND COSTUMES</bold>
-      <em>ALBUM AVAILABLE NOW!</em>
-    </h1>
-    <h2>Featuring <span>10</span> New Tracks</h2>
-    <hr />
-    <ul>
-      <li>SOMETHING IN THE WATER</li>
-      <li>NOT ALONE</li>
-      <li>FRIEND LIKE JAMES DEAN</li>
-      <li>ALL THAT YOU ARE</li>
-      <li>WAIT A MINUTE</li>
-      <li>EVANESCE</li>
-      <li>WAITING ON</li>
-      <li>SEX AND COSTUMES</li>
-      <li>DROP THE BOMB</li>
-      <li>RABID</li>
-    </ul>
-  </div>
-  <div class="stipe-container">
-    <a
-      href="https://buy.stripe.com/bIY14TedR3uF1So144"
-      class="stripe-payment"
-      target="_blank"
-      rel="noreferrer"><i class="fa-solid fa-compact-disc" />Buy CD</a
-    >
-
-    <a
-      href="https://buy.stripe.com/aEU14TfhVaX7cx2dQR"
-      class="stripe-payment"
-      target="_blank"
-      rel="noreferrer"><i class="fa-solid fa-jar" />Tip Artist</a
-    >
-  </div>
+<div class="content">
+  <h1>
+    <bold class="album-title">SEX AND COSTUMES</bold>
+    <em>ALBUM AVAILABLE NOW!</em>
+  </h1>
+  <h2>Featuring <span>10</span> New Tracks</h2>
+  <hr />
+  <ul>
+    <li>SOMETHING IN THE WATER</li>
+    <li>NOT ALONE</li>
+    <li>FRIEND LIKE JAMES DEAN</li>
+    <li>ALL THAT YOU ARE</li>
+    <li>WAIT A MINUTE</li>
+    <li>EVANESCE</li>
+    <li>WAITING ON</li>
+    <li>SEX AND COSTUMES</li>
+    <li>DROP THE BOMB</li>
+    <li>RABID</li>
+  </ul>
 </div>
+<div class="stipe-container">
+  <a
+    href="https://buy.stripe.com/bIY14TedR3uF1So144"
+    class="stripe-payment"
+    target="_blank"
+    rel="noreferrer"><i class="fa-solid fa-compact-disc" />Buy CD</a
+  >
+
+  <a
+    href="https://buy.stripe.com/aEU14TfhVaX7cx2dQR"
+    class="stripe-payment"
+    target="_blank"
+    rel="noreferrer"><i class="fa-solid fa-jar" />Tip Artist</a
+  >
+</div>
+
 <div>
   <Link to="musicplayer">
     <button class="music-player-btn">Music Player</button>
