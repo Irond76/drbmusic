@@ -7,15 +7,15 @@
 body {
 background-color: black;
 color: #fff;
+background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://res.cloudinary.com/rush-media/image/upload/v1676155932/Dale-Bendixen-Music/dale-main-img_xdetgl.jpg');
+background-size: contain;
+background-repeat: no-repeat;
+background-position-y: 4em;
 }
 .Main-Content-Container {
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://res.cloudinary.com/rush-media/image/upload/v1676155932/Dale-Bendixen-Music/dale-main-img_xdetgl.jpg');
   width: 100%;
   min-height: 100vh;
   min-height: 100dvh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position-y: 4em;
   display: grid;
   grid-template-rows: auto 1fr auto ;
 }
