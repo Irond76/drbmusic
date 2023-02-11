@@ -1,4 +1,5 @@
 <script>
+  import { Link } from "svelte-navigator";
   const albumImage = "src/assets/sexandcostumes.jpg";
 </script>
 
@@ -39,6 +40,11 @@
       rel="noreferrer"><i class="fa-solid fa-jar" />Tip Artist</a
     >
   </div>
+</div>
+<div class="music-player-btn">
+  <Link to="musicplayer">
+    <h1>Mp3 Player</h1>
+  </Link>
 </div>
 
 <style>
@@ -107,6 +113,11 @@
   i {
     margin-right: 0.6rem;
     color: white;
+  }
+
+  .music-player-btn {
+    border: 1px solid green;
+    margin-top: 4em;
   }
 
   .stripe-payment:hover {
