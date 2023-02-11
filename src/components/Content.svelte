@@ -158,7 +158,7 @@
       font-weight: 400;
     }
     .album-cover {
-      width: 8rem;
+      width: 6rem;
       margin-bottom: 2rem;
     }
     hr {
