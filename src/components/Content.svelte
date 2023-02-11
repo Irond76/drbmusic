@@ -1,7 +1,7 @@
 <script>
   import { Link } from "svelte-navigator";
   const albumImage =
-    "https://asset.cloudinary.com/rush-media/d842fdf9cf7a980a1285b9202ed33d88";
+    "https://res.cloudinary.com/rush-media/image/upload/v1676155932/Dale-Bendixen-Music/sexandcostumes_aroro1.jpg";
 </script>
 
 <div class="album-container">

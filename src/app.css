@@ -9,7 +9,7 @@ background-color: black;
 color: #fff;
 }
 .Main-Content-Container {
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://asset.cloudinary.com/rush-media/e56b89e166bf0da7256b72d91c9ff443');
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://res.cloudinary.com/rush-media/image/upload/v1676155932/Dale-Bendixen-Music/dale-main-img_xdetgl.jpg');
   width: 100%;
   min-height: 100vh;
   min-height: 100dvh;
