@@ -15,7 +15,7 @@
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
-    background-color: rgba(160, 0, 0, 0.2);
+    background-color: rgba(160, 0, 0, 0.1);
     position: relative;
     border: 3px solid #a00000;
     border-radius: 2em;
