@@ -41,9 +41,9 @@
     >
   </div>
 </div>
-<div class="music-player-btn">
+<div>
   <Link to="musicplayer">
-    <h1>Mp3 Player</h1>
+    <button class="music-player-btn">Music Player</button>
   </Link>
 </div>
 
@@ -115,16 +115,38 @@
     color: white;
   }
 
-  .music-player-btn {
-    border: 1px solid green;
-    margin-top: 4em;
-  }
-
   .stripe-payment:hover {
     cursor: pointer;
-    transition: all 0.2s linear;
+    transition: all 0.2s ease-in;
     transform: scale(1.2);
     color: #a00000;
+  }
+  .music-player-btn {
+    box-shadow: 0px 0px 1em #a00000;
+    cursor: pointer;
+    border: 1px solid #a00000;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    background: transparent;
+    color: #a00000;
+    margin-top: 4em;
+    animation-name: musicPlayer;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+  }
+  @keyframes musicPlayer {
+    0% {
+      box-shadow: 0px 0px 1em #a00000;
+      scale: 0.5;
+    }
+    100% {
+      box-shadow: 0px 0px 8em #a00000;
+      scale: 1;
+    }
+  }
+  .music-player-btn:hover {
+    transition: all 0.2s linear;
+    transform: scale(1.2);
   }
   @media screen and (max-width: 680px) {
     .album-container {

@@ -9,10 +9,10 @@ background-color: black;
 color: #fff;
 }
 .Main-Content-Container {
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('./assets/dale-main-img.jpg');
   width: 100%;
   min-height: 100vh;
   min-height: 100dvh;
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('./assets/dale-main-img.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position-y: 4em;
