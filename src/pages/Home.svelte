@@ -11,7 +11,7 @@
   <Content />
 </article>
 <footer>
-  <!-- <Footer /> -->
+  <Footer />
 </footer>
 
 <style>
@@ -20,5 +20,6 @@
     margin: 0 auto;
     width: 80vw;
     text-align: center;
+    letter-spacing: 0.1em;
   }
 </style>
