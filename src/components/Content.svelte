@@ -24,6 +24,21 @@
       <li>RABID</li>
     </ul>
   </div>
+  <div class="stipe-container">
+    <a
+      href="https://buy.stripe.com/bIY14TedR3uF1So144"
+      class="stripe-payment"
+      target="_blank"
+      rel="noreferrer"><i class="fa-solid fa-compact-disc" />Buy CD</a
+    >
+
+    <a
+      href="https://buy.stripe.com/aEU14TfhVaX7cx2dQR"
+      class="stripe-payment"
+      target="_blank"
+      rel="noreferrer"><i class="fa-solid fa-jar" />Tip Artist</a
+    >
+  </div>
 </div>
 
 <style>
@@ -75,6 +90,30 @@
   img {
     box-shadow: 10px 10px 5px black;
     filter: drop-shadow(1px 1px 10rem #a00000);
+  }
+
+  .stipe-container {
+    padding: 1rem;
+  }
+  .stripe-payment {
+    padding: 0.5rem;
+    transition: all 0.2s linear;
+    display: inline-block;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  i {
+    margin-right: 0.6rem;
+    color: white;
+  }
+
+  .stripe-payment:hover {
+    cursor: pointer;
+    transition: all 0.2s linear;
+    transform: scale(1.2);
+    color: #a00000;
   }
   @media screen and (max-width: 680px) {
     .album-container {
