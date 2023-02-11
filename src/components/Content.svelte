@@ -1,6 +1,7 @@
 <script>
   import { Link } from "svelte-navigator";
-  const albumImage = "../public/sexandcostumes.jpg";
+  const albumImage =
+    "https://asset.cloudinary.com/rush-media/d842fdf9cf7a980a1285b9202ed33d88";
 </script>
 
 <div class="album-container">
