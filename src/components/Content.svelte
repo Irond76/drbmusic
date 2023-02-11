@@ -6,6 +6,7 @@
 
 <div class="album-container">
   <img src={albumImage} alt="album cover" class="album-cover" />
+</div>
   <div class="content">
     <h1>
       <bold class="album-title">SEX AND COSTUMES</bold>
