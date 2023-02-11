@@ -1,6 +1,6 @@
 <script>
   import { Link } from "svelte-navigator";
-  const albumImage = "src/assets/sexandcostumes.jpg";
+  const albumImage = "../public/sexandcostumes.jpg";
 </script>
 
 <div class="album-container">
