@@ -97,7 +97,6 @@
   img {
     box-shadow: 1px 1px 20rem #a00000;
     border: 5px solid black;
-    /* filter: drop-shadow(1px 1px 10rem #a00000); */
   }
 
   .stipe-container {
@@ -159,8 +158,8 @@
       font-weight: 400;
     }
     .album-cover {
-      width: 6rem;
-      margin-bottom: 2rem;
+      box-shadow: 1px 1px 20rem #a00000;
+      border: 5px solid black;
     }
     hr {
       width: 40vw;
@@ -171,6 +170,10 @@
   @media screen and (min-width: 680px) {
     .album-container {
       grid-template-columns: 1fr 1fr;
+    }
+    .album-cover {
+      box-shadow: 1px 1px 20rem #a00000;
+      border: 5px solid black;
     }
     .content {
       margin-left: -1em;
