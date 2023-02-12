@@ -149,7 +149,7 @@
     transition: all 0.2s linear;
     transform: scale(1.2);
   }
-  @media screen and (max-width: 680px) {
+  @media screen and (max-width: 800px) {
     .album-container {
       grid-template-columns: 1fr;
       width: 100%;
@@ -158,8 +158,10 @@
       font-weight: 400;
     }
     .album-cover {
+      width: 20em;
       box-shadow: 1px 1px 20rem #a00000;
       border: 5px solid black;
+      margin-bottom: 2em;
     }
     hr {
       width: 40vw;
@@ -167,11 +169,12 @@
       border: 1px solid #a00000;
     }
   }
-  @media screen and (min-width: 680px) {
+  @media screen and (min-width: 801px) {
     .album-container {
       grid-template-columns: 1fr 1fr;
     }
     .album-cover {
+      width: 20em;
       box-shadow: 1px 1px 20rem #a00000;
       border: 5px solid black;
     }
