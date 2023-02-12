@@ -9,7 +9,7 @@
   <div class="content">
     <h1>
       <bold class="album-title">SEX AND COSTUMES</bold>
-      <em>ALBUM AVAILABLE NOW!</em>
+      <em>AVAILABLE NOW!</em>
     </h1>
     <h2>Featuring <span>10</span> New Tracks</h2>
     <hr />
@@ -96,7 +96,7 @@
   }
   img {
     box-shadow: 10px 10px 5px black;
-    filter: drop-shadow(1px 1px 10rem #a00000);
+    /* filter: drop-shadow(1px 1px 10rem #a00000); */
   }
 
   .stipe-container {

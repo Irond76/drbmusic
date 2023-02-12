@@ -18,7 +18,7 @@
     text-align: left;
     border-bottom: 1px solid #a00000;
     border-bottom-width: 0.2em;
-    margin-bottom: 0.1rem;
+    margin-bottom: 0.5rem;
   }
 
   @media screen and (min-width: 340px) {

@@ -7,16 +7,16 @@
 </script>
 
 <Router>
+  <Header />
   <main class="Main-Content-Container">
-    <Header />
     <Route path="/">
       <Home />
     </Route>
     <Route path="/musicplayer">
       <MusicPlayer />
     </Route>
-    <Footer />
   </main>
+  <Footer />
 </Router>
 
 <style>
