@@ -158,7 +158,7 @@
       font-weight: 400;
     }
     .album-cover {
-      width: 20em;
+      width: 12em;
       box-shadow: 1px 1px 20rem #a00000;
       border: 5px solid black;
       margin-bottom: 2em;
