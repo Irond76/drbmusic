@@ -95,7 +95,8 @@
     width: 20em;
   }
   img {
-    box-shadow: 10px 10px 5px black;
+    box-shadow: 1px 1px 20rem #a00000;
+    border: 5px solid black;
     /* filter: drop-shadow(1px 1px 10rem #a00000); */
   }
 
