@@ -1,9 +1,20 @@
 <script>
+  import { onMount } from "svelte";
+  import songStore from "../stores/songStore";
+  let songs = [];
+  songStore.subscribe((data) => {
+    songs = data;
+  });
 </script>
 
 <div class="music-player">
   <div class="text">
-    <h3>Example Text</h3>
+    <h3>{songs[0].title}</h3>
+    <div on:click={null}>
+      <audio controls autoplay>
+        <source src={songs[0].url} type="audio/mpeg" />
+      </audio>
+    </div>
   </div>
 </div>
 

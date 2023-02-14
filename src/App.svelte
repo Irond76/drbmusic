@@ -1,5 +1,5 @@
 <script>
-  import { Router, Link, Route } from "svelte-navigator";
+  import { Router, Route } from "svelte-navigator";
   import Home from "./pages/Home.svelte";
   import MusicPlayer from "./pages/MusicPlayer.svelte";
   import Header from "./components/Header.svelte";

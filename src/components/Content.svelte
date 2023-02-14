@@ -1,7 +1,13 @@
 <script>
   import { Link } from "svelte-navigator";
+  import songStore from "../stores/songStore";
+  let songs = [];
+  let playing = false;
   const albumImage =
     "https://res.cloudinary.com/rush-media/image/upload/v1676155932/Dale-Bendixen-Music/sexandcostumes_aroro1.jpg";
+  songStore.subscribe((data) => {
+    songs = data;
+  });
 </script>
 
 <div class="album-container">
@@ -14,7 +20,10 @@
     <h2>Featuring <span>10</span> New Tracks</h2>
     <hr />
     <ul>
-      <li>SOMETHING IN THE WATER</li>
+      <!-- svelte-ignore a11y-no-on -->
+      <Link to="/musicplayer">
+        <li class="link" on:click>Something In The Water</li>
+      </Link>
       <li>NOT ALONE</li>
       <li>FRIEND LIKE JAMES DEAN</li>
       <li>ALL THAT YOU ARE</li>
@@ -49,6 +58,12 @@
 </div>
 
 <style>
+  ul :global(a) {
+    text-decoration: none;
+    margin-bottom: 0.1rem;
+    font-size: 1.2em;
+    color: #fff;
+  }
   ul {
     list-style: none;
   }
