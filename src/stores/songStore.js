@@ -4,7 +4,7 @@ const songStore = writable([
     {
         id:1,
         title: "Something In The Water",
-        url: "./public/something-in-the-water.mp3"
+        url: "https://res.cloudinary.com/rush-media/video/upload/v1676415706/Dale-Bendixen-Music/something-in-the-water_qpltfy.mp3"
     }
 ]);
 
