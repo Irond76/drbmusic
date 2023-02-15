@@ -185,6 +185,7 @@
     }
     .sub-title {
       margin-bottom: 1.4em;
+      padding-top: 2em;
     }
     li {
       font-weight: 400;
