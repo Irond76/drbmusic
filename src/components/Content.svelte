@@ -7,12 +7,12 @@
     "https://res.cloudinary.com/rush-media/image/upload/v1676155932/Dale-Bendixen-Music/sexandcostumes_aroro1.jpg";
   songStore.subscribe((data) => {
     songs = data;
-    onMount(() => {
-      songStore;
-    });
   });
-  let setSong = (song) => {
+  const setSong = (song) => {
     song.nowPlaying = true;
+  };
+  const resetSong = (song) => {
+    song.nowPlaying = false;
   };
 </script>
 
@@ -34,7 +34,9 @@
                 {song.title}
               </li>
             </Link>
-          {:else}{/if}
+          {:else}
+            {window.location.reload()};
+          {/if}
         {/each}
       </ul>
       <p class="sub-title">Click Song Title To Open Player</p>
