@@ -94,6 +94,7 @@
     grid-template-columns: 1fr 1fr;
     width: 45vw;
     /* border: 1px solid green; */
+    padding-bottom: 2em;
   }
   .content {
     margin-left: -0.75em;
