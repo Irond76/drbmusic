@@ -98,6 +98,7 @@
   }
   .content {
     margin-left: -0.75em;
+    margin-bottom: -1.5em;
   }
   em {
     font-size: small;
