@@ -64,7 +64,7 @@
 
 <style>
   .sub-title {
-    font-size: 0.6em;
+    font-size: 0.8em;
     margin-top: 1em;
     color: #a00000;
   }
