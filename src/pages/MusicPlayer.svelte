@@ -71,6 +71,11 @@
   }
   .audio-player {
     margin-top: 1em;
+    box-shadow: 0px 0px 1em #a00000;
+    border-radius: 2em;
+  }
+  audio {
+    background: transparent;
   }
   .home-link {
     cursor: pointer;
