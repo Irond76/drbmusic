@@ -197,6 +197,9 @@
       margin: 0.5rem auto 1rem auto;
       border: 1px solid #a00000;
     }
+    .content {
+      margin-bottom: -1.5em;
+    }
   }
   @media screen and (min-width: 801px) {
     .album-container {
