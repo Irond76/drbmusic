@@ -64,7 +64,7 @@
     /* border: 1px solid blue; */
     margin-left: 9em;
     width: 60vw;
-    height: 90vh;
+    height: 80vh;
   }
   .title {
     margin-bottom: 3em;
@@ -78,7 +78,7 @@
 
   @media screen and (max-width: 680px) {
     .about-container {
-      height: 90vh;
+      height: 100vh;
       width: 80vw;
       margin-left: 3em;
     }
