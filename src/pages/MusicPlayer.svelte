@@ -5,7 +5,6 @@
   songStore.subscribe((data) => {
     songs = data;
   });
-  console.log(songs[0].nowPlaying === true);
 </script>
 
 {#each songs as song}
@@ -19,16 +18,16 @@
           </audio>
         </div>
       </div>
+      <div>
+        {#each songs as song}
+          {#if song.nowPlaying}
+            <Link to="/" on:click={() => (song.nowPlaying = false)}>Home</Link>
+          {:else}{/if}
+        {/each}
+      </div>
     </div>
   {:else}{/if}
 {/each}
-<div>
-  {#each songs as song}
-    {#if song.nowPlaying}
-      <Link to="/" on:click={() => (song.nowPlaying = false)}>Home</Link>
-    {:else}{/if}
-  {/each}
-</div>
 
 <style>
   .music-player {
