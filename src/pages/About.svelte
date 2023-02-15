@@ -52,7 +52,7 @@
     cursor: pointer;
     padding: 0.1em;
     width: fit-content;
-    margin: 2em auto;
+    margin: 0 auto 1em auto;
     text-align: center;
     transition: all 0.2s linear;
   }
@@ -88,10 +88,10 @@
       margin-left: 3em;
     }
     .title {
-      margin-bottom: 1em;
+      margin-bottom: 0.2em;
     }
     .content-text {
-      font-size: 0.9em;
+      font-size: 0.8em;
       letter-spacing: 0.1em;
     }
   }
