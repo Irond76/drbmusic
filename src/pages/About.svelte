@@ -55,7 +55,7 @@
 
   @media screen and (max-width: 680px) {
     .about-container {
-      height: 80vh;
+      height: 90vh;
       width: 80vw;
       margin-left: 3em;
     }
