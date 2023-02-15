@@ -39,6 +39,11 @@
     <div class="home-link">
       <Link to="/">Back Home</Link>
     </div>
+    <div>
+      <div class="home-link">
+        <Link to="/gallery">Gallery</Link>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -64,7 +69,7 @@
     /* border: 1px solid blue; */
     margin-left: 9em;
     width: 60vw;
-    height: 80vh;
+    height: 100vh;
   }
   .title {
     margin-bottom: 3em;
