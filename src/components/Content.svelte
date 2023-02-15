@@ -11,9 +11,6 @@
   const setSong = (song) => {
     song.nowPlaying = true;
   };
-  const resetSong = (song) => {
-    song.nowPlaying = false;
-  };
 </script>
 
 {#key songStore}
