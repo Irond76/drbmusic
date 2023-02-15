@@ -11,6 +11,9 @@
   const setSong = (song) => {
     song.nowPlaying = true;
   };
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
 </script>
 
 {#key songStore}
@@ -32,7 +35,7 @@
               </li>
             </Link>
           {:else}
-            {(window.location.reload(), window.scrollTo(0, 0))};
+            {window.location.reload()};
           {/if}
         {/each}
       </ul>
