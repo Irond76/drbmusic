@@ -76,7 +76,7 @@
     cursor: pointer;
     padding: 0.1em;
     width: fit-content;
-    margin: 1em auto;
+    margin: 2em auto;
     text-align: center;
     transition: all 0.2s linear;
   }
