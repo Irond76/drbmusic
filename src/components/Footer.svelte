@@ -39,6 +39,7 @@
   }
 
   .copyright {
+    color: #a00000;
     letter-spacing: 0.1em;
     margin-top: 1em;
   }
