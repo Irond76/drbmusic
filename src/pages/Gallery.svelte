@@ -5,7 +5,7 @@
 <h1>Gallery Page</h1>
 
 <div class="home-link">
-  <Link to="/home">Home</Link>
+  <Link to="/">Home</Link>
 </div>
 
 <style>
