@@ -188,6 +188,10 @@
       grid-template-columns: 1fr;
       width: 100%;
     }
+    em {
+      font-size: x-small;
+      padding: 1em;
+    }
     .sub-title {
       margin-bottom: 1.4em;
       padding-top: 2em;
