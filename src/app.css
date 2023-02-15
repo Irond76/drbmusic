@@ -14,10 +14,17 @@ background-position-y: 4em;
 }
 .Main-Content-Container {
   width: 100%;
-  min-height: 100vh;
-  min-height: 100dvh;
+  min-height: 80vh;
+  min-height: 80dvh;
   display: grid;
   grid-template-rows: auto 1fr auto ;
 }
+/* @media screen and (max-width: 680px) {
+  .Main-Content-Container {
+    min-height: 60vh;
+    min-height: 60dvh;
+
+  }
+} */
 
 
