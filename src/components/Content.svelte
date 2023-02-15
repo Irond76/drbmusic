@@ -54,11 +54,11 @@
         rel="noreferrer"><i class="fa-solid fa-jar" />Tip Artist</a
       >
     </div>
-  </div>
-  <div>
-    <Link to="/about">
-      <button class="music-player-btn">About Artist</button>
-    </Link>
+    <div>
+      <Link to="/about">
+        <button class="music-player-btn">About Artist</button>
+      </Link>
+    </div>
   </div>
 {/key}
 
