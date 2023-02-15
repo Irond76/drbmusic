@@ -183,6 +183,9 @@
       grid-template-columns: 1fr;
       width: 100%;
     }
+    .sub-title {
+      margin-bottom: 1.4em;
+    }
     li {
       font-weight: 400;
     }
