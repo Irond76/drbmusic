@@ -14,16 +14,16 @@
     <div class="music-player">
       <div class="text">
         <h3>{song.title}</h3>
-        <div class="cd-image">
-          <img src={cdImage} width="80em" alt="" />
-        </div>
+      </div>
+      <div class="cd-image">
+        <img src={cdImage} width="6em" alt="" />
+      </div>
+      <div>
         <div>
           <audio controls autoplay>
             <source src={song.url} type="audio/mpeg" />
           </audio>
         </div>
-      </div>
-      <div>
         {#each songs as song}
           {#if song.nowPlaying}
             <Link to="/" on:click={() => (song.nowPlaying = false)}>Home</Link>
@@ -50,13 +50,25 @@
     margin: 2em auto 0 auto;
   }
   .cd-image {
-    width: 5em;
-    background-color: black;
+    /* border: 2px solid blue; */
+    width: 20em;
+    background-color: transparent;
+    animation: rotation 3s infinite linear;
   }
-  .cd-image img {
+  img {
+    width: 100%;
     border-radius: 50%;
+    padding: 0.8em;
+    box-shadow: 3px 3px 10px rgba(160, 0, 0, 0.8);
   }
-
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
   @media screen and (max-width: 680px) {
     .music-player {
       margin-top: 4rem;
