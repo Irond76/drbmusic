@@ -12,7 +12,7 @@
     <Route path="/">
       <Home />
     </Route>
-    <Route path="/musicplayer">
+    <Route path="/musicplayer" primary={false}>
       <MusicPlayer />
     </Route>
   </main>

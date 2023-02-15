@@ -1,21 +1,33 @@
 <script>
-  import { onMount } from "svelte";
+  import { Link } from "svelte-navigator";
   import songStore from "../stores/songStore";
   let songs = [];
   songStore.subscribe((data) => {
     songs = data;
   });
+  console.log(songs[0].nowPlaying === true);
 </script>
 
-<div class="music-player">
-  <div class="text">
-    <h3>{songs[0].title}</h3>
-    <div on:click={null}>
-      <audio controls autoplay>
-        <source src={songs[0].url} type="audio/mpeg" />
-      </audio>
+{#each songs as song}
+  {#if song.nowPlaying === true}
+    <div class="music-player">
+      <div class="text">
+        <h3>{song.title}</h3>
+        <div>
+          <audio controls autoplay>
+            <source src={song.url} type="audio/mpeg" />
+          </audio>
+        </div>
+      </div>
     </div>
-  </div>
+  {:else}{/if}
+{/each}
+<div>
+  {#each songs as song}
+    {#if song.nowPlaying}
+      <Link to="/" on:click={() => (song.nowPlaying = false)}>Home</Link>
+    {:else}{/if}
+  {/each}
 </div>
 
 <style>

@@ -1,61 +1,65 @@
 <script>
   import { Link } from "svelte-navigator";
+  import { onMount } from "svelte";
   import songStore from "../stores/songStore";
   let songs = [];
-  let playing = false;
   const albumImage =
     "https://res.cloudinary.com/rush-media/image/upload/v1676155932/Dale-Bendixen-Music/sexandcostumes_aroro1.jpg";
   songStore.subscribe((data) => {
     songs = data;
+    onMount(() => {
+      songStore;
+    });
   });
+  let setSong = (song) => {
+    song.nowPlaying = true;
+  };
 </script>
 
-<div class="album-container">
-  <img src={albumImage} alt="album cover" class="album-cover" />
-  <div class="content">
-    <h1>
-      <bold class="album-title">SEX AND COSTUMES</bold>
-      <em>AVAILABLE NOW!</em>
-    </h1>
-    <h2>Featuring <span>10</span> New Tracks</h2>
-    <hr />
-    <ul>
-      <!-- svelte-ignore a11y-no-on -->
-      <Link to="/musicplayer">
-        <li class="link" on:click>Something In The Water</li>
-      </Link>
-      <li>NOT ALONE</li>
-      <li>FRIEND LIKE JAMES DEAN</li>
-      <li>ALL THAT YOU ARE</li>
-      <li>WAIT A MINUTE</li>
-      <li>EVANESCE</li>
-      <li>WAITING ON</li>
-      <li>SEX AND COSTUMES</li>
-      <li>DROP THE BOMB</li>
-      <li>RABID</li>
-    </ul>
-  </div>
-  <div class="stipe-container">
-    <a
-      href="https://buy.stripe.com/bIY14TedR3uF1So144"
-      class="stripe-payment"
-      target="_blank"
-      rel="noreferrer"><i class="fa-solid fa-compact-disc" />Buy CD</a
-    >
+{#key songStore}
+  <div class="album-container">
+    <img src={albumImage} alt="album cover" class="album-cover" />
+    <div class="content">
+      <h1>
+        <bold class="album-title">SEX AND COSTUMES</bold>
+        <em>AVAILABLE NOW!</em>
+      </h1>
+      <h2>Featuring <span>10</span> New Tracks</h2>
+      <hr />
+      <ul>
+        {#each songs as song}
+          {#if !song.nowPlaying}
+            <Link to="/musicplayer" on:click={() => setSong(song)}>
+              <li class="link">
+                {song.title}
+              </li>
+            </Link>
+          {:else}{/if}
+        {/each}
+      </ul>
+    </div>
+    <div class="stipe-container">
+      <a
+        href="https://buy.stripe.com/bIY14TedR3uF1So144"
+        class="stripe-payment"
+        target="_blank"
+        rel="noreferrer"><i class="fa-solid fa-compact-disc" />Buy CD</a
+      >
 
-    <a
-      href="https://buy.stripe.com/aEU14TfhVaX7cx2dQR"
-      class="stripe-payment"
-      target="_blank"
-      rel="noreferrer"><i class="fa-solid fa-jar" />Tip Artist</a
-    >
+      <a
+        href="https://buy.stripe.com/aEU14TfhVaX7cx2dQR"
+        class="stripe-payment"
+        target="_blank"
+        rel="noreferrer"><i class="fa-solid fa-jar" />Tip Artist</a
+      >
+    </div>
   </div>
-</div>
-<div>
-  <Link to="musicplayer">
-    <button class="music-player-btn">Music Player</button>
-  </Link>
-</div>
+  <div>
+    <Link to="musicplayer">
+      <button class="music-player-btn">Music Player</button>
+    </Link>
+  </div>
+{/key}
 
 <style>
   ul :global(a) {
