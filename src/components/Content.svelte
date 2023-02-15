@@ -57,6 +57,9 @@
       <Link to="/about">
         <button class="music-player-btn">About Artist</button>
       </Link>
+      <Link to="/gallery">
+        <button class="music-player-btn gallery">Gallery</button>
+      </Link>
     </div>
   </div>
 {/key}
@@ -143,7 +146,9 @@
     margin-right: 0.6rem;
     color: white;
   }
-
+  .gallery {
+    width: 6em;
+  }
   .stripe-payment:hover {
     cursor: pointer;
     transition: all 0.2s ease-in;
@@ -159,6 +164,7 @@
     background: transparent;
     color: #a00000;
     margin-top: 4em;
+    margin-right: 1em;
     animation-name: musicPlayer;
     animation-duration: 3s;
     animation-iteration-count: 1;

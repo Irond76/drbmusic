@@ -3,6 +3,7 @@
   import Home from "./pages/Home.svelte";
   import MusicPlayer from "./pages/MusicPlayer.svelte";
   import About from "./pages/About.svelte";
+  import Gallery from "./pages/Gallery.svelte";
   import Header from "./components/Header.svelte";
   import Footer from "./components/Footer.svelte";
 </script>
@@ -18,6 +19,9 @@
     </Route>
     <Route path="/about" primary={false}>
       <About />
+    </Route>
+    <Route path="/gallery" primary={false}>
+      <Gallery />
     </Route>
   </main>
   <Footer />
