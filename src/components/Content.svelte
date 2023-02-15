@@ -37,6 +37,7 @@
           {:else}{/if}
         {/each}
       </ul>
+      <p class="sub-title">Click Song Title To Open Player</p>
     </div>
     <div class="stipe-container">
       <a
@@ -55,13 +56,18 @@
     </div>
   </div>
   <div>
-    <Link to="musicplayer">
-      <button class="music-player-btn">Music Player</button>
+    <Link to="/about">
+      <button class="music-player-btn">About Artist</button>
     </Link>
   </div>
 {/key}
 
 <style>
+  .sub-title {
+    font-size: 0.6em;
+    margin-top: 1em;
+    color: #a00000;
+  }
   ul :global(a) {
     text-decoration: none;
     margin-bottom: 0.1rem;
