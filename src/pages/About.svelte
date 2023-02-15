@@ -1,4 +1,5 @@
 <script>
+  import { Link } from "svelte-navigator";
 </script>
 
 <div class="about-container">
@@ -34,9 +35,31 @@
       music; and I look forward to creating alot more in the future.
     </p>
   </div>
+  <div>
+    <div class="home-link">
+      <Link to="/">Back Home</Link>
+    </div>
+  </div>
 </div>
 
 <style>
+  .home-link {
+    cursor: pointer;
+    padding: 0.1em;
+    width: fit-content;
+    margin: 2em auto;
+    text-align: center;
+    transition: all 0.2s linear;
+  }
+  .home-link:hover {
+    transform: scale(1.2);
+  }
+  .home-link :global(a) {
+    text-decoration: none;
+    margin-bottom: 0.1rem;
+    font-size: 1.2em;
+    color: #a00000;
+  }
   .about-container {
     /* border: 1px solid blue; */
     margin-left: 9em;
