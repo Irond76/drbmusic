@@ -19,14 +19,18 @@
         <img src={cdImage} width="6em" alt="" />
       </div>
       <div>
-        <div>
+        <div class="audio-player">
           <audio controls autoplay>
             <source src={song.url} type="audio/mpeg" />
           </audio>
         </div>
         {#each songs as song}
           {#if song.nowPlaying}
-            <Link to="/" on:click={() => (song.nowPlaying = false)}>Home</Link>
+            <div class="home-link">
+              <Link to="/" on:click={() => (song.nowPlaying = false)}
+                >Back Home</Link
+              >
+            </div>
           {:else}{/if}
         {/each}
       </div>
@@ -37,7 +41,7 @@
 <style>
   .music-player {
     width: 60vw;
-    height: 70vh;
+    height: 80vh;
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
@@ -47,7 +51,7 @@
     border: 3px solid #a00000;
     border-radius: 2em;
     box-shadow: 0px 0px 25em #a00000;
-    margin: 2em auto 0 auto;
+    margin: 2em auto 4em auto;
   }
   .cd-image {
     /* border: 2px solid blue; */
@@ -55,12 +59,40 @@
     background-color: transparent;
     animation: rotation 3s infinite linear;
   }
+  .text {
+    margin: 2em;
+    letter-spacing: 0.2em;
+  }
   img {
     width: 100%;
     border-radius: 50%;
     padding: 0.8em;
     box-shadow: 3px 3px 10px rgba(160, 0, 0, 0.8);
   }
+  .audio-player {
+    margin-top: 1em;
+  }
+  .home-link {
+    cursor: pointer;
+    padding: 0.1em;
+    width: fit-content;
+    margin: 1em auto;
+    text-align: center;
+    transition: all 0.2s linear;
+  }
+  .home-link:hover {
+    transform: scale(1.2);
+  }
+  .home-link :global(a) {
+    text-decoration: none;
+    margin-bottom: 0.1rem;
+    font-size: 1.2em;
+    color: #a00000;
+  }
+  audio::-webkit-media-controls-panel {
+    background-color: rgba(160, 0, 0, 0.7);
+  }
+
   @keyframes rotation {
     from {
       transform: rotate(0deg);
@@ -73,7 +105,7 @@
     .music-player {
       margin-top: 4rem;
       width: 90vw;
-      height: 50vh;
+      height: 60vh;
     }
   }
 </style>
