@@ -64,7 +64,9 @@
 
 <style>
   .sub-title {
-    font-size: 0.8em;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    font-weight: bold;
     margin-top: 1em;
     color: #a00000;
   }
