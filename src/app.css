@@ -19,12 +19,12 @@ background-position-y: 4em;
   display: grid;
   grid-template-rows: auto 1fr auto ;
 }
-/* @media screen and (max-width: 680px) {
+@media screen and (max-width: 680px) {
   .Main-Content-Container {
     min-height: 60vh;
-    min-height: 60dvh;
+    min-height: 70dvh;
 
   }
-} */
+}
 
 

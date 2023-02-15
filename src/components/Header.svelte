@@ -5,7 +5,7 @@
 <style>
   .header-component {
     width: 80vw;
-    margin: 1em auto;
+    margin: 2em auto;
     display: grid;
     grid-template-columns: 1fr;
   }

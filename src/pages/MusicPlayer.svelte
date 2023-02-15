@@ -37,7 +37,7 @@
 <style>
   .music-player {
     width: 60vw;
-    height: 60vh;
+    height: 70vh;
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
@@ -47,7 +47,7 @@
     border: 3px solid #a00000;
     border-radius: 2em;
     box-shadow: 0px 0px 25em #a00000;
-    margin: auto auto;
+    margin: 2em auto 0 auto;
   }
   .cd-image {
     width: 5em;
@@ -55,14 +55,13 @@
   }
   .cd-image img {
     border-radius: 50%;
-    /* border: 3px solid blue; */
   }
 
   @media screen and (max-width: 680px) {
     .music-player {
       margin-top: 4rem;
       width: 90vw;
-      height: 60vh;
+      height: 50vh;
     }
   }
 </style>
