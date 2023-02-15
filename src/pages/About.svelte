@@ -1,7 +1,10 @@
 <script>
-  window.onload = function () {
-    window.scrollTo(0, 0);
-  };
+  history.scrollRestoration = "manual";
+
+  window.onbeforeunload,
+    function () {
+      window.scrollTo(0, 0);
+    };
 </script>
 
 <div>
