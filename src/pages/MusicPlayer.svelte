@@ -105,7 +105,7 @@
     .music-player {
       margin-top: 4rem;
       width: 90vw;
-      height: 60vh;
+      height: 70vh;
     }
   }
 </style>
