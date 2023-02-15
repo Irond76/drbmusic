@@ -32,7 +32,7 @@
               </li>
             </Link>
           {:else}
-            {window.location.reload()};
+            {(window.location.reload(), window.scrollTo(0, 0))};
           {/if}
         {/each}
       </ul>
